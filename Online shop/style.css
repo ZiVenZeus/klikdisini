@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-image: url('background.jpg');
+    color: white;
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    color: rgb(255, 255, 255);
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    background: linear-gradient(90deg, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0) 100%);
+}
+
+.mylogo {
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+.home {
+    position: relative;
+    width: 100%;
+    height: calc(100vh - 60px); /* Mengurangi tinggi header */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 70px 10px;
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.5)), url('background.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.content {
+    max-width: 800px;
+    text-align: center;
+    margin: auto;
+    padding: 0 20px;
+}
+
+.content h1 {
+    font-size: 50px;
+    font-weight: 900;
+    margin: 20px 0;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.content h3 {
+    font-size: 32px;
+    font-weight: 700;
+    color: rgb(235, 235, 255);
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    letter-spacing: 1px;
+}
+
+.content .button {
+    padding: 12px 24px;
+    margin-top: 20px;
+    background-color: rgb(229, 155, 17);
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 30px;
+    transition: background-color 0.3s ease;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.content .button:hover {
+    background-color: rgb(255, 173, 51);
+}
+
+span {
+    color: rgb(229, 155, 17);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+@media screen and (max-width: 768px) {
+    .header {
+        height: 80px;
+    }
+
+    .mylogo {
+        font-size: 20px;
+    }
+
+    .home {
+        padding: 50px 5px;
+    }
+
+    .content h1 {
+        font-size: 40px;
+    }
+
+    .content h3 {
+        font-size: 28px;
+    }
+
+    .content .button {
+        padding: 10px 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .header {
+        height: 80px;
+    }
+
+    .mylogo {
+        font-size: 18px;
+    }
+
+    .home {
+        padding: 50px 5px;
+    }
+
+    .content {
+        padding: 0 10px;
+    }
+
+    .content h1 {
+        font-size: 35px;
+    }
+
+    .content h3 {
+        font-size: 24px;
+    }
+
+    .content .button {
+        padding: 8px 16px;
+    }
+}
